@@ -1,0 +1,40 @@
+
+
+/* Estilos e Classes CSS */
+
+html
+{
+	font-family: Tahoma;
+	margin: 0px auto;
+	text-align: center;
+	background-color: #FEFFFF;
+
+}
+
+.bts
+{
+
+	border: none;
+	color: #FFFFFF;
+	padding: 14px 36px;
+	text-decoration: none;
+	font-size: 23px;
+	margin: 1.5px;
+	cursor: pointer;
+	font-family: Verdana;
+
+}
+
+.btOn
+{
+	background-color: #3F459E;
+
+
+}
+
+.btOff
+{
+	background-color: #616161;
+
+
+}

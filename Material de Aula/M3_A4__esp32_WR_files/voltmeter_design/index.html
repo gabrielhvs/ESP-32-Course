@@ -1,0 +1,79 @@
+<!-- Design do Voltímetro WiFi com ESP32 -->
+
+<!DOCTYPE HTML><html>
+<head>
+    <title>WR Kits Local</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<style> 
+		html 
+		{
+			font-family: Tahoma;
+			display: inline-block;
+			margin: 0px auto;
+			text-align: center;
+		}
+	
+		h2 
+		{ 
+			font-size: 45px; 
+	
+		}
+    
+		p 
+		{ 
+			font-size: 40px; 
+		
+		}
+    
+		.volt_un 
+		{ 
+			font-size: 30px; 
+		
+		}
+		.volt_disp
+		{
+			font-size: 35px;
+     
+		}
+	</style>
+</head>
+
+<body>
+	<h2>WR Kits Voltmeter ESP32</h2>
+  
+	<p>
+   
+	<i class="fas fa-battery-half" style="color:#12237b"></i>
+    <span class="volt_disp">Battery Voltage: </span> 
+    <span id="voltage">%VOLTS%</span>
+    <span class="volt_un">V</span>
+	
+	</p>
+
+</body>
+
+<script> 
+setInterval(
+function() 
+{
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() 
+  {
+    if (this.readyState == 4 && this.status == 200)
+      document.getElementById("voltage").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "/voltage", true);
+  xhttp.send();
+}, 1500 );
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+

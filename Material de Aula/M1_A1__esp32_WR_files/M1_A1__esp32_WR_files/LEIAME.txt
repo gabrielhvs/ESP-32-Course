@@ -1,0 +1,8 @@
+Utilize o driver conforme o seu sistema operacional (Windowns, MAC, Linux).
+
+Verifique o modelo de driver da sua placa (CP210 ou CH341).
+
+Siga os passos da vídeo-aula para instalação.
+
+
+WR Kits docs.

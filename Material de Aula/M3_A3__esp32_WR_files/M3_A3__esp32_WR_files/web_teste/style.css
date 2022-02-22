@@ -1,0 +1,30 @@
+/* Documento CSS */
+
+html
+{
+	font-family: Verdana;
+	text-align: center;
+	background-color: #cccccc
+
+}
+
+.par1
+{
+	color: #ffffff;
+	padding: 20px 40px;
+	font-size: 30px;
+	margin: 2px;
+	font-family: Tahoma;
+	background-color: #333333;
+}
+
+.par2
+{
+	color: #ffffff;
+	padding: 20px 40px;
+	font-size: 30px;
+	margin: 2px;
+	font-family: Tahoma;
+	background-color: #444444;
+
+}
